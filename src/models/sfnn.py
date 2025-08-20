@@ -96,10 +96,7 @@ class SFNN(eqx.Module):
 	#-------------------------------------------------------------------
 
 	def __call__(self, obs: jax.Array, net: Network, key: Optional[jax.Array]=None) -> Tuple[Int, Network]:
-		"""
-		TODO: 
-			add obs as input to the network
-		"""
+
 
 		A = net.A	  # N x N
 		e = net.e 	  # N x N x M
